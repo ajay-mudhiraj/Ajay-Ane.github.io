@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ajay Ane | Data Analytics Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
-  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -132,31 +130,33 @@
       </div>
     </section>
 
-    <!-- Certifications Section -->
+    <!-- Certificates Section -->
     <section class="section-block">
-      <h2><i class="fas fa-certificate"></i> CERTIFICATIONS</h2>
-      <div class="certification-grid">
-        <div class="certification-card">
-          <h3>Data Science Certification</h3>
-          <p class="issuer">360DigiTMG | 2024</p>
-          <div class="skills-tags">
-            <span>Python</span>
-            <span>SQL</span>
-            <span>Machine Learning</span>
+      <h2><i class="fas fa-certificate"></i> CERTIFICATES</h2>
+      <div class="certificate-grid">
+        <div class="certificate-card" onclick="openCertificate('360DigiTMG_Data_Science_Certificate.pdf')">
+          <img src="cert-thumbs/360digi-thumb.jpg" alt="360DigiTMG Certificate">
+          <div class="certificate-overlay">
+            <h3>Data Science Certification</h3>
+            <p>360DigiTMG • 2024</p>
           </div>
         </div>
-        <div class="certification-card">
-          <h3>Power BI Certification</h3>
-          <p class="issuer">PwC | 2025</p>
-          <div class="skills-tags">
-            <span>Power BI</span>
-            <span>DAX</span>
-            <span>Data Modeling</span>
+        <div class="certificate-card" onclick="openCertificate('PwC_Power_BI_Certificate.pdf')">
+          <img src="cert-thumbs/pwc-thumb.jpg" alt="PwC Certificate">
+          <div class="certificate-overlay">
+            <h3>Power BI Certification</h3>
+            <p>PwC • 2025</p>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Certificate Modal -->
+  <div id="certificateModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <iframe id="certificateFrame" frameborder="0"></iframe>
+  </div>
 
   <!-- Footer -->
   <footer class="portfolio-footer">
@@ -167,5 +167,27 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Certificate Viewer Functions
+    function openCertificate(filename) {
+      document.getElementById('certificateFrame').src = `certificates/${filename}`;
+      document.getElementById('certificateModal').style.display = "block";
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    }
+    
+    function closeModal() {
+      document.getElementById('certificateModal').style.display = "none";
+      document.body.style.overflow = "auto"; // Enable scrolling
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const modal = document.getElementById('certificateModal');
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
 </body>
 </html>
