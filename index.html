@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ajay Ane | Data Analytics Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <!-- Header Section -->
@@ -13,11 +17,11 @@
       <h1>AJAY ANE</h1>
       <p class="subtitle">Data Analytics Professional</p>
       <div class="contact-info">
-        <p>📍 Sangareddy, Telangana | 📞 +91 8247411869 | 📧 aneajay2420@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Sangareddy, Telangana | <i class="fas fa-phone"></i> +91 8247411869 | <i class="fas fa-envelope"></i> aneajay2420@gmail.com</p>
         <div class="social-links">
-          <a href="https://linkedin.com/in/ane-ajay-504732257" target="_blank">LinkedIn</a> | 
-          <a href="https://github.com/ajay-mudhiraj" target="_blank">GitHub</a> |
-          <a href="#" target="_blank">Portfolio</a>
+          <a href="https://linkedin.com/in/ane-ajay-504732257" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/ajay-mudhiraj" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
         </div>
       </div>
     </div>
@@ -26,20 +30,58 @@
   <main class="container">
     <!-- Summary Section -->
     <section class="section-block">
-      <h2>SUMMARY</h2>
+      <h2><i class="fas fa-user-tie"></i> PROFESSIONAL SUMMARY</h2>
       <p class="summary-text">
-        Results-driven data professional with expertise in AI model development, data analysis, and business intelligence. 
-        Certified in Python, SQL, ML, and Power BI by 360DigiTMG, Deloitte, and PwC.
+        Results-driven Data Analytics professional with expertise in AI model development, business intelligence, and data visualization. 
+        Certified in Python, SQL, and Power BI with hands-on experience in machine learning, NLP, and dashboard development.
       </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-block">
+      <h2><i class="fas fa-code"></i> TECHNICAL SKILLS</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3><i class="fas fa-laptop-code"></i> Programming</h3>
+          <div class="skills-tags">
+            <span>Python (Pandas, NumPy)</span>
+            <span>SQL</span>
+            <span>PyTorch</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-chart-bar"></i> Data Analysis</h3>
+          <div class="skills-tags">
+            <span>Power BI</span>
+            <span>Tableau</span>
+            <span>Excel</span>
+            <span>Matplotlib/Seaborn</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-robot"></i> Machine Learning</h3>
+          <div class="skills-tags">
+            <span>Supervised Learning</span>
+            <span>NLP</span>
+            <span>CNN</span>
+            <span>Hyperparameter Tuning</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section class="section-block">
-      <h2>PROJECTS</h2>
+      <h2><i class="fas fa-project-diagram"></i> PROJECTS</h2>
       <div class="project-grid">
-        <!-- Project 1 -->
         <div class="project-card">
-          <h3>Embryo Classification System</h3>
+          <div class="project-header">
+            <h3>Embryo Classification System</h3>
+            <div class="project-links">
+              <a href="https://github.com/ajay-mudhiraj/embryo-classifier" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
           <div class="tech-tags">
             <span>Python</span>
             <span>PyTorch</span>
@@ -48,53 +90,68 @@
           </div>
           <ul class="project-description">
             <li>Achieved <strong>92% accuracy</strong> on 13K+ embryo images using DenseNet121</li>
-            <li>Deployed as Flask API, reducing manual evaluation time by <strong>40%</strong></li>
+            <li>Reduced manual evaluation time by <strong>40%</strong> through Flask API deployment</li>
+            <li>Implemented image preprocessing pipeline with OpenCV</li>
           </ul>
-          <a href="https://github.com/ajay-mudhiraj/embryo-classifier" target="_blank" class="project-link">View Code →</a>
         </div>
 
-        <!-- Project 2 -->
         <div class="project-card">
-          <h3>EduBot AI Assistant</h3>
+          <div class="project-header">
+            <h3>EduBot AI Assistant</h3>
+            <div class="project-links">
+              <a href="https://github.com/ajay-mudhiraj/edubot" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
           <div class="tech-tags">
             <span>Python</span>
             <span>NLP</span>
             <span>Streamlit</span>
+            <span>FAISS</span>
           </div>
           <ul class="project-description">
-            <li>Built semantic search engine with <strong>90% query-match accuracy</strong></li>
-            <li>Designed for Grades 10-12 educational content</li>
+            <li>Built semantic search engine with <strong>90% query-match accuracy</strong> for educational content</li>
+            <li>Integrated BERT embeddings for contextual understanding</li>
+            <li>Deployed as interactive web app with Streamlit</li>
           </ul>
-          <a href="https://github.com/ajay-mudhiraj/edubot" target="_blank" class="project-link">View Code →</a>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Experience Section -->
     <section class="section-block">
-      <h2>TECHNICAL SKILLS</h2>
-      <div class="skills-container">
-        <div class="skill-category">
-          <h3>Programming</h3>
+      <h2><i class="fas fa-briefcase"></i> EXPERIENCE</h2>
+      <div class="experience-item">
+        <h3>Data Science Intern <span class="company">@ 360DigiTMG</span></h3>
+        <p class="duration"><i class="far fa-calendar-alt"></i> Jun 2024 - Jun 2025</p>
+        <ul>
+          <li>Developed Embryo Classification System achieving 92% accuracy</li>
+          <li>Built EduBot AI Assistant with NLP capabilities</li>
+          <li>Trained in Python, EDA, and ML model deployment</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section-block">
+      <h2><i class="fas fa-certificate"></i> CERTIFICATIONS</h2>
+      <div class="certification-grid">
+        <div class="certification-card">
+          <h3>Data Science Certification</h3>
+          <p class="issuer">360DigiTMG | 2024</p>
           <div class="skills-tags">
             <span>Python</span>
             <span>SQL</span>
+            <span>Machine Learning</span>
           </div>
         </div>
-        <div class="skill-category">
-          <h3>Data Analysis</h3>
+        <div class="certification-card">
+          <h3>Power BI Certification</h3>
+          <p class="issuer">PwC | 2025</p>
           <div class="skills-tags">
-            <span>Pandas</span>
-            <span>NumPy</span>
             <span>Power BI</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Machine Learning</h3>
-          <div class="skills-tags">
-            <span>PyTorch</span>
-            <span>Scikit-learn</span>
-            <span>NLP</span>
+            <span>DAX</span>
+            <span>Data Modeling</span>
           </div>
         </div>
       </div>
@@ -104,7 +161,10 @@
   <!-- Footer -->
   <footer class="portfolio-footer">
     <div class="container">
-      <p>© 2024 Ajay Ane | Built with GitHub Pages</p>
+      <div class="footer-content">
+        <p>© 2024 Ajay Ane. All rights reserved.</p>
+        <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+      </div>
     </div>
   </footer>
 </body>
